@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت موفقیت‌آمیز نوبت</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* استایل‌های سفارشی برای صفحه موفقیت */
+        .success-container {
+            text-align: center;
+            padding: 80px 40px;
+            max-width: 600px;
+            /* برای قرارگیری در مرکز صفحه بدون استفاده از .container اصلی */
+            margin: 100px auto; 
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            font-family: 'Vazir', Tahoma, sans-serif;
+            direction: rtl;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #4CAF50; /* رنگ سبز موفقیت */
+            margin-bottom: 20px;
+            display: block;
+        }
+        .success-container h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .success-container p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            /* استفاده از گرادیانت دکمه اصلی */
+            background: linear-gradient(90deg, #A033FF 0%, #FF33A1 100%); 
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .back-link:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+             .success-container {
+                margin: 50px 20px;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-container">
+        <span class="success-icon">✔️</span>
+        <h1>نوبت شما ثبت شد!</h1>
+        <p>با تشکر از شما. اطلاعات شما با موفقیت دریافت و در سیستم نوبت‌دهی ویژه ما ثبت گردید. تیم متخصص ما در اسرع وقت از طریق شماره تماسی که وارد کرده‌اید با شما تماس خواهد گرفت.</p>
+        <a href="/" class="back-link">بازگشت به صفحه اصلی</a>
+    </div>
+
+</body>
+</html>
