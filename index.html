@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه نوبت‌دهی انحصاری</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">خودکار</div>
+            <!-- <div class="lang-switch">EN</div> -->
+        </header>
+        
+        <main class="content-wrapper">
+            <section class="form-section">
+                <h1>با خودکار همین حالا مشتریان خود را سازماندهی کنید</h1>
+                <p>مشاوره سریع و تخصصی خود را ثبت کنید و در اولویت قرار بگیرید.</p>
+                
+                <form id="appointmentForm" netlify method="POST" name="contact">
+                    <input type="hidden" name="form-name" value="contact" />
+                    
+                    <div class="form-group">
+                        <label for="name">نام</label>
+                        <input type="text" id="name" name="نام" required placeholder="مثال: علی محمدی">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="profession">شغل</label>
+                        <input type="text" id="profession" name="شغل" required placeholder="مثال: پزشک یا مدیر عامل">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">شماره تماس</label>
+                        <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
+                    </div>
+                    
+                    <button type="submit" class="cta-button">ثبت نوبت</button>
+                </form>
+            </section>
+            
+            <section class="mockup-section">
+                <div class="mockup-container">
+                    <div class="mockup-bg"></div>
+                    </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
