@@ -301,3 +301,57 @@
   /* Tiny accessibility focus */
   input:focus-visible, .cta-button:focus{ outline:3px solid rgba(30,90,136,0.14); outline-offset:2px; }
   
+  /* Layout for paired image + text sections */
+.row-paired {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* default = image left, text right */
+.row-standard {
+    flex-direction: row;
+}
+
+/* reverse = image right, text left */
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* fix for mockup images shrinking weirdly */
+.row-paired .mockup-section {
+    flex: 1;
+    max-width: 420px;
+}
+.row-paired .mockup-section .mockup-bg {
+    height: 100%;
+}
+
+/* text container */
+.row-paired section {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 900px) {
+    .row-paired {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row-standard,
+    .row-reverse {
+        flex-direction: column !important;
+    }
+
+    .row-paired section {
+        width: 100%;
+    }
+
+    .row-paired .mockup-section {
+        max-width: 100%;
+    }
+}
