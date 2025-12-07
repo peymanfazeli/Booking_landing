@@ -3,51 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خودکار</title>
+    <title>خودکار | نوبت‌دهی هوشمند</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">خودکار</div>
-            <!-- <div class="lang-switch">EN</div> -->
-        </header>
-        
-        <main class="content-wrapper">
-            <section class="form-section">
-                <h1>با خودکار همین حالا مشتریان خود را سازماندهی کنید</h1>
-                <p>مشاوره سریع و تخصصی خود را ثبت کنید و در اولویت قرار بگیرید.</p>
-                
-                <form id="appointmentForm" netlify method="POST" name="contact" data-netlify-redirect="/success">
-                    <input type="hidden" name="form-name" value="contact" />
-                    
-                    <div class="form-group">
-                        <label for="name">نام</label>
-                        <input type="text" id="name" name="نام" required placeholder="مثال: علی محمدی">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="profession">شغل</label>
-                        <input type="text" id="profession" name="شغل" required placeholder="مثال: پزشک یا مدیر عامل">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">شماره تماس</label>
-                        <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
-                    </div>
-                    
-                    <button type="submit" class="cta-button">ثبت نوبت</button>
-                </form>
-            </section>
-            
-            <section class="mockup-section">
-                <div class="mockup-container">
-                    <div class="mockup-bg"></div>
-                    </div>
-            </section>
-        </main>
-    </div>
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <div class="logo">خودکار</div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>نوبت‌دهی آنلاین هوشمند برای رشد سریع کسب‌وکار شما</h1>
+        <p>با خودکار همین حالا مشتریان خود را سازماندهی کنید.</p>
+
+        <a href="#appointmentForm" class="cta-button hero-cta">۱۴ روز استفاده رایگان</a>
+    </section>
+
+    <!-- Why Booking Is Hard -->
+    <div
+        style="display: flex; flex-direction: row; gap: 10px; justify-content: space-between; align-items: center;"
+    >
+        <section class="mockup-section">
+            <div class="mockup-container">
+                <div class="mockup-bg">
+                    <img src="assets/images/2.png" alt="خودکار" class="mockup-img">
+                </div>
+            </div>
+        </section>
+        <section class="problems-section">
+            <h2>رزرو وقت نباید اینقدر سخت باشد</h2>
+            <p>بسیاری از کسب‌وکارها هنوز با تماس تلفنی و هماهنگی‌های دستی کار می‌کنند. این روش‌ها باعث می‌شود:</p>
     
-    <script src="script.js"></script>
+            <ul>
+                <li>نوبت‌ها اشتباه ثبت شوند</li>
+                <li>مشتری نوبت بگیرد و کنسل کند</li>
+                <li>تعداد زیادی مشتری ریزش کنند</li>
+                <li>زمان زیادی از نیروها برای پاسخگویی تلفنی هدر برود</li>
+                <li>برنامه‌ریزی روزانه نامطمئن و بی‌ثبات شود</li>
+            </ul>
+        </section>
+    </div>
+
+
+
+    <!-- Smart System Features -->
+    <div
+        style="display: flex; flex-direction: row-reverse; gap: 10px; justify-content: space-between;"
+    >
+        <section class="mockup-section">
+            <div class="mockup-container">
+                <div class="mockup-bg">
+                    <img src="assets/images/3.png" alt="خودکار" class="mockup-img">
+                </div>
+            </div>
+        </section>
+        <section class="features-section">
+            <h2>سیستم نوبت‌دهی که خودش همه کار را انجام می‌دهد</h2>
+
+            <ul class="features-list">
+                <li>📅 تقویم هوشمند (نمایش ساعات آزاد و پر)</li>
+                <li>📨 یادآوری پیامکی (کاهش عدم حضور تا ۶۰٪)</li>
+                <li>💳 پرداخت آنلاین (دریافت بیعانه رزرو)</li>
+                <li>📊 داشبورد مدیریت (آمار، گزارش‌گیری، وضعیت نوبت‌ها)</li>
+            </ul>
+
+            <a href="#appointmentForm" class="cta-button">۱۴ روز استفاده رایگان</a>
+        </section>
+    </div>
+
+
+
+
+    <!-- Business Types -->
+
+    <div
+        style="display: flex; flex-direction: row; gap: 10px; justify-content: space-between;"
+    >
+        <section class="mockup-section">
+            <div class="mockup-container">
+                <div class="mockup-bg">
+                    <img src="assets/images/4.webp" alt="خودکار" class="mockup-img">
+                </div>
+            </div>
+        </section>
+        <section class="business-types">
+            <h2>مناسب چه کسب‌وکارهایی است؟</h2>
+
+            <div class="business-grid">
+                <div>🏥 کلینیک‌ها و پزشکان</div>
+                <div>💄 سالن‌های زیبایی</div>
+                <div>🏋️ باشگاه‌ها و کلاس‌های ورزشی</div>
+                <div>🎓 مراکز آموزشی</div>
+                <div>🔧 تعمیرگاه‌ها</div>
+                <div>🚚 خدمات در محل (نصاب، تکنسین، کارواش سیار)</div>
+            </div>
+        </section>
+    </div>
+
+
+
+      <!-- Booking Form -->
+      <main class="content-wrapper">
+        <section class="form-section">
+            <h2>مشاوره سریع و تخصصی خود را ثبت کنید</h2>
+            <p>در اولویت قرار بگیرید و بدون اتلاف وقت شروع کنید.</p>
+
+            <form id="appointmentForm" netlify method="POST" name="contact" data-netlify-redirect="/success">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="form-group">
+                    <label for="name">نام</label>
+                    <input type="text" id="name" name="نام" required placeholder="مثال: علی محمدی">
+                </div>
+
+                <div class="form-group">
+                    <label for="profession">شغل</label>
+                    <input type="text" id="profession" name="شغل" required placeholder="مثال: پزشک یا مدیر عامل">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">شماره تماس</label>
+                    <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
+                </div>
+
+                <button type="submit" class="cta-button">ثبت نوبت</button>
+            </form>
+        </section>
+
+
+        <!-- Hero Mockup Image -->
+        <section class="mockup-section">
+            <div class="mockup-container">
+                <div class="mockup-bg">
+                    <img src="assets/images/1.webp" alt="خودکار" class="mockup-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>خودکار</div>
+        <!-- <div>شماره تماس: ———</div> -->
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
