@@ -1,7 +1,7 @@
 /* تنظیمات پایه */
 @font-face {
     font-family: 'Vazir';
-    src: url('Vazir-FD-WOL.ttf') format('truetype'); /* فرض بر استفاده از فونت فارسی استاندارد است */
+    src: url('assets/fonts/IRANSans/IRANSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +11,7 @@ body {
     font-family: 'Vazir', Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f4f6fa 0%, #e2e8f0 100%); /* گرادیانت پس‌زمینه لایت */
+    background: linear-gradient(135deg, #f4f6fa 0%, #e2e8f0 100%); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ header {
 .mockup-container {
     width: 350px;
     height: 350px;
-    background: linear-gradient(135deg, #e0a3ff 0%, #ffc0d9 100%); /* گرادیانت بصری */
+    background: linear-gradient(135deg, #e0a3ff 0%, #ffc0d9 100%); 
     border-radius: 20px;
     position: relative;
     transform: rotateY(-10deg);
@@ -150,7 +150,7 @@ header {
     }
 
     .mockup-section {
-        order: -1; /* تصویر به بالای فرم برود */
+        order: -1; 
         margin-bottom: 20px;
     }
 
