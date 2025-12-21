@@ -25,17 +25,18 @@
     --navy-900: #0f2440; /* deep navy */
     --navy-700: #133a5a;
     --navy-500: #1e5a88;
-    --cyan-700: #00bbd45f;
-    --cyan-500: #009fb4;
-    --muted: #6b7280;
+    --cyan-700: #ddeef4;
+    --cyan-500: #2890da;
+    --muted: #6b7280;ه
     --soft-yellow: #f5dd8a;
     --accent: var(--soft-yellow);
     --radius: 12px;
     --glass: rgba(255,255,255,0.6);
     --shadow-1: 0 6px 20px rgba(16,24,40,0.06);
     --shadow-2: 0 10px 30px rgba(16,24,40,0.08);
-    --text-orange-bg: rgba(254, 163, 67, 0.452);
-    --text-orange: rgb(255, 132, 0);
+    --text-orange-bg: #fbf0e9;
+    --text-orange: #ff6015;
+
   }
   
   /* Reset & base */
@@ -68,13 +69,13 @@
     justify-content:space-between;
     gap:16px;
     margin-bottom:18px;
-    background-color: #ffecc9;
+    background-color: var(--text-orange-bg);
     padding: 10px 15px;
     flex-wrap: wrap;
   }
   .logo{
     font-family: 'avini';
-    color: rgb(255, 132, 0);
+    color: var(--text-orange);
     padding:10px 16px;
     border-radius: 10px;
     font-size:2.05rem;
@@ -90,10 +91,12 @@
     color: var(--muted);
   }
   .logo-img{
+     margin-right: -10px;
       width:50%;
       height:auto;
       object-fit:contain;
       display:block;
+
   }
 
 
@@ -137,7 +140,8 @@
     font-family: "yekanbakh";
     font-size: larger;
     font-weight: 700;
-
+    background-color: var(--cyan-500);
+    color: white;
   }
   /* Layout: main content */
   .content-wrapper{
@@ -151,7 +155,7 @@
   /* Form section */
   .form-section{
     background:var(--cyan-700);
-    width: 70%;
+    width: 50%;
     margin-top: 20px;
     padding:20px;
     border-radius: var(--radius);
@@ -312,14 +316,16 @@
     font-weight: bold;
     line-height: 1;
   }
-  .checkbox-list span{
+  /* .checkbox-list span{
     flex:1;
-  }
+  } */
   
   /* Hero bottom checkbox list - 3 columns */
   .hero-bottom{
     width: 100%;
     text-align: center;
+    /* padding-left: 10%; */
+    padding-right: 10%;
   }
   .hero-bottom .checkbox-list{
     grid-template-columns: repeat(3, minmax(0,1fr));
@@ -486,7 +492,7 @@
 /* fix for mockup images shrinking weirdly */
 .row-paired .mockup-section {
     flex: 1;
-    max-width: 420px;
+    /* max-width: 420px; */
 }
 .row-paired .mockup-section .mockup-bg {
     height: 100%;

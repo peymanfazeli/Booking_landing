@@ -13,8 +13,8 @@
     <!-- Header -->
     <header>
        <div class="logo-container">
-            <div class="logo">خودکار</div>
-            <div>دستیار هوشمند آنلاین کسب و کار</div>
+            <div class="logo">خودکــار</div>
+            <div>دستیار هوشمندآنلاین کسب و کار</div>
        </div>
         <a
             href="#appointmentForm"
@@ -34,11 +34,15 @@
         >
             <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
                 <img src="assets/images/logo.png" alt="خودکار" class="logo-img">
-                <h1>نوبت‌دهی آنلاین هوشمند برای رشد سریع کسب‌وکار شما</h1>
+                <h1>
+                    نوبت‌دهی آنلاین هوشمند 
+                    <br>
+                    برای رشد سریع کسب‌وکار شما
+                </h1>
                 <a
                     href="#appointmentForm"
                     class="cta-button hero-cta"
-                    style="width: 100%; text-align: center; color: rgb(255, 132, 0); background-color: rgba(254, 163, 67, 0.452);"
+                    style="width: 80%; text-align: center; color: #ff6015; background-color: #ffd1b2;"
                 >
                     14 روز استفاده رایگان
                 </a>
@@ -94,11 +98,11 @@
     <div
         style="display: flex; justify-content: center;"
     >
-    <section class="form-section">
-        <h2>شروع کنید</h2>
-        <h2 style="color: rgb(255, 132, 0); font-weight: bolder">14 روز استفاده رایگان</h2>
+    <section class="form-section" id="appointmentForm">
+        <h2>شــروع کنیــد</h2>
+        <h2 style="color: #ff6015; font-weight: bolder">14 روز استفاده رایگان</h2>
 
-        <form id="appointmentForm" netlify method="POST" name="contact" data-netlify-redirect="./success.html">
+        <form netlify method="POST" name="contact" data-netlify-redirect="./success.html">
             <input type="hidden" name="form-name" value="contact" />
 
             <div class="form-group">
@@ -116,7 +120,11 @@
                 <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
             </div>
 
-            <button type="submit" class="cta-button form-btn " style="color: white;">ثبت نام</button>
+            <div
+                style="display: flex; justify-content: center;"
+            >
+                <button type="submit" class="cta-button form-btn " style="color: white;">ثــبت نــــــام</button>
+            </div>
         </form>
     </section>
 
@@ -146,7 +154,7 @@
             <a
                 href="#appointmentForm"
                 class="cta-button hero-cta"
-                style="width: 100%; text-align: center; color: white; background-color: #133a5a;"
+                style="width: 80%; text-align: center; color: white; background-color: #2890da;"
             >
                 ثبت نام رایگان خودکار
             </a>
@@ -195,13 +203,18 @@
                     <a>سالن‌های زیبایی</a>
                 </div>
             </div>
-            <a
-                href="#appointmentForm"
-                class="cta-button hero-cta"
-                style="width: 100%; text-align: center; color: rgb(255, 132, 0); background-color: rgba(254, 163, 67, 0.452);"
+            <div
+                style="display: flex; justify-content: center;"
             >
-                14 روز استفاده رایگان
-            </a>
+                <a
+                    href="#appointmentForm"
+                    class="cta-button hero-cta"
+                    style="width: 80%; text-align: center; color: #ff6015; background-color: #ffd1b2;"
+                >
+                    14 روز استفاده رایگان
+                </a>
+
+            </div>
         </section>
     </div>
 
