@@ -12,17 +12,115 @@
 
     <!-- Header -->
     <header>
-        <div class="logo">خودکار</div>
+       <div class="logo-container">
+            <div class="logo">خودکار</div>
+            <div>دستیار هوشمند آنلاین کسب و کار</div>
+       </div>
+        <a
+            href="#appointmentForm"
+            class="cta-button hero-cta"
+            style="margin-left: 5%; font-size: 0.9rem;"
+        >رایگان شروع کنید</a>
+        
     </header>
 
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>نوبت‌دهی آنلاین هوشمند برای رشد سریع کسب‌وکار شما</h1>
-        <p>با خودکار همین حالا مشتریان خود را سازماندهی کنید.</p>
 
-        <a href="#appointmentForm" class="cta-button hero-cta">۱۴ روز استفاده رایگان</a>
+        <div
+            class = "hero-top"
+            style="display: flex;"
+        >
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
+                <img src="assets/images/logo.png" alt="خودکار" class="logo-img">
+                <h1>نوبت‌دهی آنلاین هوشمند برای رشد سریع کسب‌وکار شما</h1>
+                <a
+                    href="#appointmentForm"
+                    class="cta-button hero-cta"
+                    style="width: 100%; text-align: center; color: rgb(255, 132, 0); background-color: rgba(254, 163, 67, 0.452);"
+                >
+                    14 روز استفاده رایگان
+                </a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
+                <img src="assets/images/1.png" alt="خودکار" class="mockup-img">
+            </div>
+        </div>
+        <div class="hero-bottom">
+            <ul class="checkbox-list">
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="مدیریت رزرو ها" checked disabled class="checkbox-orange">
+                        <span>مدیریت رزرو ها</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="زمان بندی" checked disabled class="checkbox-blue">
+                        <span>زمان بندی</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="پرداخت آنلاین" checked disabled class="checkbox-orange">
+                        <span>پرداخت آنلاین</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="بدون تماس تلفنی" checked disabled class="checkbox-blue">
+                        <span>بدون تماس تلفنی</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="داشبورد آنلاین" checked disabled class="checkbox-orange">
+                        <span>داشبورد آنلاین</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="features" value="تقویم هوشمند" checked disabled class="checkbox-blue">
+                        <span>تقویم هوشمند</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
     </section>
+
+    <!-- Form -->
+
+    <div
+        style="display: flex; justify-content: center;"
+    >
+    <section class="form-section">
+        <h2>شروع کنید</h2>
+        <h2 style="color: rgb(255, 132, 0); font-weight: bolder">14 روز استفاده رایگان</h2>
+
+        <form id="appointmentForm" netlify method="POST" name="contact" data-netlify-redirect="./success.html">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="form-group">
+                <label for="name">نام</label>
+                <input type="text" id="name" name="نام" required placeholder="مثال: علی محمدی">
+            </div>
+
+            <div class="form-group">
+                <label for="profession">شغل</label>
+                <input type="text" id="profession" name="شغل" required placeholder="مثال: پزشک یا مدیر عامل">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">شماره تماس</label>
+                <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
+            </div>
+
+            <button type="submit" class="cta-button form-btn " style="color: white;">ثبت نام</button>
+        </form>
+    </section>
+
+    </div>
 
     <!-- Why Booking Is Hard -->
     <div
@@ -30,130 +128,93 @@
     >
         <section class="mockup-section">
             <div class="mockup-container">
-                <div class="mockup-bg">
+                <!-- <div class="mockup-bg"> -->
                     <img src="assets/images/2.png" alt="خودکار" class="mockup-img">
-                </div>
+                <!-- </div> -->
             </div>
         </section>
         <section class="problems-section">
-            <h2>رزرو وقت نباید اینقدر سخت باشه</h2>
-            <p>بسیاری از کسب‌وکارها هنوز با تماس تلفنی و هماهنگی‌های دستی کار می‌کنن. این روش‌ها باعث می‌شه:</p>
+            <h2>رزرو کردن نباید اینقدر سخت باشه</h2>
+            <p>بیشتر کسب‌وکارها هنوز با تماس تلفنی و یادداشت های دستی و هماهنگی های زمان بر کار می‌کنن. این روش‌ها باعث می‌شه:</p>
     
             <ul>
                 <li>نوبت‌ها اشتباه ثبت شن</li>
-                <li>مشتری نوبت بگیره و کنسل کنه</li>
+                <li>مشتری نوبت رایگان بگیره و کنسل کنه</li>
                 <li>تعداد زیادی مشتری ریزش کنن</li>
                 <li>زمان زیادی از نیروها برای پاسخگویی تلفنی هدر بره</li>
-                <li>برنامه‌ریزی روزانه نامطمئن و بی‌ثبات بشه</li>
             </ul>
+            <a
+                href="#appointmentForm"
+                class="cta-button hero-cta"
+                style="width: 100%; text-align: center; color: white; background-color: #133a5a;"
+            >
+                ثبت نام رایگان خودکار
+            </a>
         </section>
     </div>
-
-
-
-    <!-- Smart System Features -->
-    <div
-        class="row-paired row-standard"
-        style="flex-direction: row-reverse;"
-    >
-        <section class="mockup-section">
-            <div class="mockup-container">
-                <div class="mockup-bg">
-                    <img src="assets/images/3.png" alt="خودکار" class="mockup-img">
-                </div>
-            </div>
-        </section>
-        <section class="features-section">
-            <h2>سیستم نوبت‌دهی که خودش همه کار را انجام میده</h2>
-
-            <ul class="features-list">
-                <li>📅 تقویم هوشمند (نمایش ساعات آزاد و پر)</li>
-                <li>📨 یادآوری پیامکی (کاهش عدم حضور تا ۶۰٪)</li>
-                <li>💳 پرداخت آنلاین (دریافت بیعانه رزرو)</li>
-                <li>📊 داشبورد مدیریت (آمار، گزارش‌گیری، وضعیت نوبت‌ها)</li>
-            </ul>
-
-            <a href="#appointmentForm" class="cta-button">۱۴ روز استفاده رایگان</a>
-        </section>
-    </div>
-
-
-
 
     <!-- Business Types -->
 
     <div
         class="row-paired row-standard"
     >
-        <section class="mockup-section">
-            <div class="mockup-container">
-                <div class="mockup-bg">
-                    <img src="assets/images/4.webp" alt="خودکار" class="mockup-img">
-                </div>
-            </div>
-        </section>
-        <section class="business-types" style="height: 100%;">
-            <h2>مناسب چه کسب‌وکارهایه؟</h2>
+        <section class="business-types" style="width: 100%;">
+            <h2>خودکار مناسب چه کارهایه؟</h2>
 
             <div class="business-grid">
-                <div>🏥 کلینیک‌ها و پزشکان</div>
-                <div>💄 سالن‌های زیبایی</div>
-                <div>🏋️ باشگاه‌ها و کلاس‌های ورزشی</div>
-                <div>🎓 مراکز آموزشی</div>
-                <div>🔧 تعمیرگاه‌ها</div>
-                <div>🚚 خدمات در محل (نصاب، تکنسین، کارواش سیار)</div>
+                <div class="business-card">
+                    <img src="assets/images/gym.png" alt="خودکار" class="business-img"> 
+                    <a>سالن های ورزشی</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/clincs.png" alt="خودکار" class="business-img">
+                    <a>کلینیک‌ها و پزشکان</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/photog.png" alt="خودکار" class="business-img">
+                    <a>خدمات عکاسی</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/litreture.png" alt="خودکار" class="business-img">
+                    <a>مراکز خدماتی</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/masage.png" alt="خودکار" class="business-img">
+                    <a>مراکز ماساژ</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/event.png" alt="خودکار" class="business-img">
+                    <a>هماهنگی ایونت</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/litreture.png" alt="خودکار" class="business-img">
+                    <a>خدمات آموزشی</a>
+                </div>
+                <div class="business-card">
+                    <img src="assets/images/beauty.png" alt="خودکار" class="business-img">
+                    <a>سالن‌های زیبایی</a>
+                </div>
             </div>
+            <a
+                href="#appointmentForm"
+                class="cta-button hero-cta"
+                style="width: 100%; text-align: center; color: rgb(255, 132, 0); background-color: rgba(254, 163, 67, 0.452);"
+            >
+                14 روز استفاده رایگان
+            </a>
         </section>
     </div>
 
-
-
-      <!-- Booking Form -->
-      <main class="content-wrapper">
-        <section class="form-section">
-            <h2>مشاوره سریع و تخصصی خود را ثبت کنید</h2>
-            <p>در اولویت قرار بگیرید و بدون اتلاف وقت شروع کنید.</p>
-
-            <form id="appointmentForm" netlify method="POST" name="contact" data-netlify-redirect="./success.html">
-                <input type="hidden" name="form-name" value="contact" />
-
-                <div class="form-group">
-                    <label for="name">نام</label>
-                    <input type="text" id="name" name="نام" required placeholder="مثال: علی محمدی">
-                </div>
-
-                <div class="form-group">
-                    <label for="profession">شغل</label>
-                    <input type="text" id="profession" name="شغل" required placeholder="مثال: پزشک یا مدیر عامل">
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">شماره تماس</label>
-                    <input type="tel" id="phone" name="شماره تماس" required placeholder="مثال: 0912xxxxxxx" pattern="[0-9]{11}">
-                </div>
-
-                <button type="submit" class="cta-button">ثبت نوبت</button>
-            </form>
-        </section>
-
-
-        <!-- Hero Mockup Image -->
-        <section class="mockup-section">
-            <div class="mockup-container">
-                <div class="mockup-bg">
-                    <img src="assets/images/1.webp" alt="خودکار" class="mockup-img">
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-
     <!-- Footer -->
     <footer class="footer">
-        <div>خودکار</div>
-        <!-- <div>شماره تماس: ———</div> -->
+        <ul>
+            <li>تهران، اقدسیه، خیابان گلزار، لادن شرقی، 12 متری ولیعصر ، بن بست قائم، پلاک 7</li>
+            <li>09106702752</li>
+        </ul>
+        <div style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
+            <img src="assets/images/logo.png" alt="خودکار" class="logo-img">
+            <a>دستیار هوشمند آنلاین کسب و کار</a>
+        </div>
     </footer>
 
 </div>
